@@ -1,5 +1,6 @@
-<div class="chores">
-    <h3>Chores</h3>
+<div class="chores" *ngIf = "chores.length > finishedChores.length " >
+    <h3>Work Harder</h3>
+    <p> </p>
     <ul>
         <li *ngFor = 'let chore of chores'>{{chore}}</li>
     </ul>
