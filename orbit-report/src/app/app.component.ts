@@ -24,14 +24,8 @@ export class AppComponent {
               fetchedSatellites[i].type, fetchedSatellites[i].launchDate, 
               fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
               this.sourceList.push(satellite)
-
-              //  for (let i = 0; i < fetchedSatellites.length; i++)
-              //   if (satellite.type === 'Space Debris') {
-              //     ShouldShowWarning();
-              //   }
-               
-
           };
+            
           // TODO: loop over satellites
           // TODO: create a Satellite object using new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
           // TODO: add the new Satellite object to sourceList using: this.sourceList.push(satellite);
