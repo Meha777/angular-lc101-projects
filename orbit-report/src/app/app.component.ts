@@ -29,10 +29,7 @@ export class AppComponent {
               
           };
             
-          
-          // TODO: loop over satellites
-          // TODO: create a Satellite object using new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
-          // TODO: add the new Satellite object to sourceList using: this.sourceList.push(satellite);
+        
           
           this.displayList = this.sourceList.slice(0);
       }.bind(this));
@@ -51,11 +48,9 @@ export class AppComponent {
         matchingSatellites.push(this.sourceList[i])
        };
        
-      //  this.displayList = matchingSatellites; 
-      //  this.displayList = this.sourceList.slice(0);
+      
     }; 
-    // assign this.displayList to be the array of matching satellites
-    // this will cause Angular to re-make the table, but now only containing matches
+    
     this.displayList = matchingSatellites;
   };
   
